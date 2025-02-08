@@ -71,7 +71,7 @@ export default {
   methods: {
     async fetchProducts() {
       try {
-        const response = await fetch(`${process.env.VUE_APP_PRODUCT_SERVICE_URL}/products`);        
+        const response = await fetch(`https://product-service-app-cucqgzg2fecegtbq.canadacentral-01.azurewebsites.net/products`);        
         if (response.ok) {
           this.products = await response.json();
         } else {
