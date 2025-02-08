@@ -46,8 +46,8 @@ jobs:
           github_id_token: ${{ steps.idtoken.outputs.result }}
           ###### End of Repository/Build Configurations ######
     env: 
-        VUE_APP_ORDER_SERVICE_URL: https://order-service-app.azurewebsites.net/
-        VUE_APP_PRODUCT_SERVICE_URL: https://product-service-app.azurewebsites.net/
+        VUE_APP_ORDER_SERVICE_URL: https://order-service-app-a9htgzhpbugfe4h5.canadacentral-01.azurewebsites.net/
+        VUE_APP_PRODUCT_SERVICE_URL: https://product-service-app-cucqgzg2fecegtbq.canadacentral-01.azurewebsites.net/
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
